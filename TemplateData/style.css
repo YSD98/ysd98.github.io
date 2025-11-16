@@ -1,37 +1,56 @@
-body { padding: 0; margin: 0 }
-#unity-container { position: fixed; width: 100%; height: 100%; background: #ffffff; }
-#unity-canvas { width: 100%; height: 100%; background: #ffffff; }
+body {
+	padding: 0;
+	margin: 0
+}
 
-/* Gray bottom loading bar */
+#unity-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#unity-canvas {
+	width: 100%;
+	height: 100%;
+	background: #b7b7b7
+}
+
+#unity-logo {
+	width: 154px;
+	height: 130px;
+	/* background: url('unity-logo-dark.png') no-repeat center */
+}
+
 #unity-loading-bar {
-    position: fixed;
-    bottom: 20px;       /* 20px above the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;       /* adjust width as needed */
-    height: 20px;
-    background-color: #cccccc;  /* gray background */
-    border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	bottom: 20%;
+	transform: translate(-50%, -50%);
+	display: none;
 }
-#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
-#unity-progress-bar-empty { margin-left: auto; margin-right: auto; width: 141px; height: 18px; margin-top: 10px; background: url('progress-bar-empty-dark.png') no-repeat center }
-#unity-loading-bar,
-#unity-progress-bar-empty,
+
+#unity-progress-bar-empty {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 18px;
+	margin-top: 10px;
+	background: url('Empty.png') no-repeat center /* rounded corner png*/
+}
+
 #unity-progress-bar-full {
-    border: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+	width: 0%;
+	height: 18px;
+	margin-top: 10px;
+	background: url('Fill.png') no-repeat center /* rounded corner png*/
 }
-#unity-loading-bar > div:not(#unity-progress-bar-full) {
-    display: none !important;
-}
-#unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
-#loading-percentage {
-    position: fixed;
-    bottom: 45px;                     /* slightly above the loading bar */
-    right: calc(50% - 10px);          /* aligns with the right end of a 300px bar */
-    font-family: 'Arial', sans-serif; /* replace with your chosen font */
-    font-size: 16px;                   /* adjust as needed */
-    color: #000000;                    /* black text */
-    font-weight: bold;
+
+#unity-warning {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%);
+	background: white;
+	padding: 10px;
+	display: none
 }

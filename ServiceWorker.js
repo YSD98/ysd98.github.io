@@ -1,9 +1,9 @@
 const cacheName = "Yash-3DPortfolio-0.1.0";
 const contentToCache = [
-    "Build/WIP.loader.js",
-    "Build/WIP.framework.js",
-    "Build/WIP.data",
-    "Build/WIP.wasm",
+    "Build/V3.loader.js",
+    "Build/V3.framework.js",
+    "Build/V3.data",
+    "Build/V3.wasm",
     "TemplateData/style.css"
 
 ];
